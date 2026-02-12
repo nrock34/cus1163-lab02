@@ -187,6 +187,7 @@ int read_file_with_syscalls(const char* filename) {
     while ((bytes_read = read(fd, buffer, (ssize_t)sizeof(buffer) - 1)) > 0) {
         buffer[bytes_read] = '\0';
         fputs(buffer, stdout);
+    }
 
     // TODO: Handle read() errors (return value -1)
     // TODO: If read() fails, close the file and return -1
