@@ -1,4 +1,5 @@
 #include "proc_reader.h"
+#include <errno.h>
 
 int list_process_directories(void) {
     // TODO: Open the /proc directory using opendir()
